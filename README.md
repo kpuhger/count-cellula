@@ -1,5 +1,13 @@
-# Project name
+# Count Cellula: Automated cell quantification in python 
+ 
+ 
+ 
+ 
+  
+## Information
 
+  Enter relevant background information about the package and how to install/use it.
+  
 ## Project organization
 
 ``` │
@@ -27,3 +35,6 @@
 │
 └── tox.ini             <- tox file with settings for running tox; see tox.testrun.org
 ```
+ 
+ 
+ Cookie cutter style project organization. The original can be found [here](https://github.com/hgrif/example-project).
