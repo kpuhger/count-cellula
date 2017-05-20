@@ -1,2 +1,8 @@
 # IPython Notebooks
-*.ipynb_checkpoints
+ .ipynb_checkpoints
+
+# pyenv
+ .python-version
+
+# macOS Finder files
+.DS_Store
