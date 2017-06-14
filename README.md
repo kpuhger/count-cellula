@@ -4,10 +4,19 @@
  
  
   
-## Information
+## Overview
 
-  Enter relevant background information about the package and how to install/use it.
+Count cellula is designed to perform automated image segmentation across a z-stack of images.  To run this program, clone the reposity and run the `count-cellula.ipynb` notebook in the notebooks/ directory. A sample image is provided in data/raw/ .
   
+  Analysis workflow:  
+<ol>
+<li> Blur the image or perform histogram analysis</li>
+<li> Perform histogram equlization (if blurred in first step, otherwise blur)</li>
+<li> Perform blob detection</li>
+<li> Perform clustering analysis</li>
+<li> .</li>
+
+
 ## Project organization
 
 ``` │
@@ -23,7 +32,7 @@
 │
 ├── tests/					<- Unit tests.
 │
-├── {{ project_name }}/		<- Python module with source code of this project.
+├── src/		<- Python module with source code of this project.
 │
 ├── environment.yml			<- conda virtual environment definition file.
 │
@@ -35,6 +44,12 @@
 │
 └── tox.ini             <- tox file with settings for running tox; see tox.testrun.org
 ```
+ This script is currently in ongoing development. 
+   
+   
  
- 
+   
+   
+   
+   
  Cookie cutter style project organization. The original can be found [here](https://github.com/hgrif/example-project).
