@@ -1,0 +1,29 @@
+import skimage as sk
+import numpy as np
+import matplotlib.pyplot as plt
+
+%matplotlib inline
+
+from skimage import io, feature, filters, color, restoration, util
+from skimage.morphology import watershed
+from skimage.future import graph
+from skimage.filters import threshold_otsu, threshold_local
+from scipy import ndimage as ndi
+
+
+exec(open('/Users/kpuhger/Documents/count-cellula/src/heq.py').read())
+exec(open('/Users/kpuhger/Documents/count-cellula/src/smoothing.py').read())
+
+
+
+# step 1 gaussian blur image
+img_gauss = gaussian_blur(img, 3)
+
+# step 2 perform adaptive equalization on blurred image
+img_gauss_aeq = adapt_eq(img_gauss)
+
+
+
+
+
+
